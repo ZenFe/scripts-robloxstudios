@@ -1,0 +1,161 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local dowlhubvyni = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local version = Instance.new("TextLabel")
+local credits = Instance.new("TextLabel")
+local vyni1 = Instance.new("TextButton")
+local vyni2 = Instance.new("TextButton")
+local vyni3 = Instance.new("TextButton")
+local vyni4 = Instance.new("TextButton")
+local vyni5 = Instance.new("TextButton")
+local vyni6 = Instance.new("TextButton")
+local vyni7 = Instance.new("TextButton")
+
+--Properties:
+
+dowlhubvyni.Name = "dowlhub vyni"
+dowlhubvyni.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = dowlhubvyni
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BackgroundTransparency = 0.350
+main.Position = UDim2.new(0.0717489123, 0, 0.0947205648, 0)
+main.Size = UDim2.new(0, 492, 0, 188)
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(0, 154, 115)
+title.BorderColor3 = Color3.fromRGB(130, 203, 255)
+title.Position = UDim2.new(-0.0016432351, 0, -0.000431491033, 0)
+title.Size = UDim2.new(0, 492, 0, 23)
+title.Font = Enum.Font.SourceSans
+title.Text = "DowlHub"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+version.Name = "version"
+version.Parent = main
+version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version.BackgroundTransparency = 1.000
+version.Position = UDim2.new(0.699127734, 0, 0, 0)
+version.Size = UDim2.new(0, 200, 0, 14)
+version.Font = Enum.Font.SourceSans
+version.Text = "V1.3 Stylish Version"
+version.TextColor3 = Color3.fromRGB(91, 91, 91)
+version.TextSize = 14.000
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(-0.0619237199, 0, 0.949077129, 0)
+credits.Size = UDim2.new(0, 200, 0, 13)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "By DefaultStudios and fp5"
+credits.TextColor3 = Color3.fromRGB(83, 83, 83)
+credits.TextSize = 14.000
+
+vyni1.Name = "vyni1"
+vyni1.Parent = main
+vyni1.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni1.Position = UDim2.new(0.0365853645, 0, 0.182930723, 0)
+vyni1.Size = UDim2.new(0, 133, 0, 27)
+vyni1.Font = Enum.Font.SourceSans
+vyni1.Text = "Vynixius Mocap"
+vyni1.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni1.TextSize = 14.000
+vyni1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Animations%3A%20Mocap"))()
+end)
+
+vyni2.Name = "vyni2"
+vyni2.Parent = main
+vyni2.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni2.Position = UDim2.new(0.361788601, 0, 0.182930723, 0)
+vyni2.Size = UDim2.new(0, 133, 0, 27)
+vyni2.Font = Enum.Font.SourceSans
+vyni2.Text = "Vynixius Speed Run 4"
+vyni2.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni2.TextSize = 14.000
+vyni2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Speed%20Run%204"))()
+end)
+
+vyni3.Name = "vyni3"
+vyni3.Parent = main
+vyni3.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni3.Position = UDim2.new(0.697154462, 0, 0.182930723, 0)
+vyni3.Size = UDim2.new(0, 133, 0, 27)
+vyni3.Font = Enum.Font.SourceSans
+vyni3.Text = "Vynixius Zombie Rush"
+vyni3.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni3.TextSize = 14.000
+vyni3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Zombie%20Rush"))()
+end)
+
+vyni4.Name = "vyni4"
+vyni4.Parent = main
+vyni4.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni4.Position = UDim2.new(0.0345528126, 0, 0.426571727, 0)
+vyni4.Size = UDim2.new(0, 133, 0, 27)
+vyni4.Font = Enum.Font.SourceSans
+vyni4.Text = "Vynixius Ragdoll Engine"
+vyni4.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni4.TextSize = 14.000
+vyni4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine%20Loader"))()
+end)
+
+
+vyni5.Name = "vyni5"
+vyni5.Parent = main
+vyni5.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni5.Position = UDim2.new(0.361788571, 0, 0.426571727, 0)
+vyni5.Size = UDim2.new(0, 133, 0, 27)
+vyni5.Modal = true
+vyni5.Font = Enum.Font.SourceSans
+vyni5.Text = "Vynixius Prision Life"
+vyni5.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni5.TextSize = 14.000
+vyni5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Prison%20Life"))()
+end)
+
+
+vyni6.Name = "vyni6"
+vyni6.Parent = main
+vyni6.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni6.Position = UDim2.new(0.697154403, 0, 0.426571727, 0)
+vyni6.Size = UDim2.new(0, 133, 0, 27)
+vyni6.Font = Enum.Font.SourceSans
+vyni6.Text = "Vynixius Tower of hell"
+vyni6.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni6.TextSize = 14.000
+vyni6.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Tower%20of%20Hell"))()
+end)
+
+
+vyni7.Name = "vyni7"
+vyni7.Parent = main
+vyni7.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
+vyni7.Position = UDim2.new(0.0365852714, 0, 0.645816624, 0)
+vyni7.Size = UDim2.new(0, 133, 0, 27)
+vyni7.Font = Enum.Font.SourceSans
+vyni7.Text = "Vynixius Jail Break"
+vyni7.TextColor3 = Color3.fromRGB(255, 255, 255)
+vyni7.TextSize = 14.000
+vyni7.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak"))()
+end)
