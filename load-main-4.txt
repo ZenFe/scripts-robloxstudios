@@ -15,7 +15,7 @@ local title = Instance.new("TextLabel")
 
 
 dowlhubloaded.Name = "dowlhub loaded"
-dowlhubloaded.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+dowlhubloaded.Parent = game.CoreGui
 dowlhubloaded.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main_load.Name = "main_load"
