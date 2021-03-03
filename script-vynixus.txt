@@ -1,8 +1,10 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local dowlhubvyni = Instance.new("ScreenGui")
-local Gradient = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
+local rel = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -43,33 +45,35 @@ local Shadow_7 = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
 local UICorner_15 = Instance.new("UICorner")
 local namesscripts_7 = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
 
 --Properties:
 
 dowlhubvyni.Name = "dowlhub vyni"
 dowlhubvyni.Parent = game.CoreGui
 
-Gradient.Name = "Gradient"
-Gradient.Parent = dowlhubvyni
-Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Gradient.BorderSizePixel = 0
-Gradient.Position = UDim2.new(0.191490948, 0, 0.251801252, 0)
-Gradient.Size = UDim2.new(0, 531, 0, 230)
-Gradient.Draggable = true
-Gradient.Active = true
+rel.Name = "rel"
+rel.Parent = dowlhubvyni
+rel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+rel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+rel.BorderSizePixel = 0
+rel.Position = UDim2.new(0.272687525, 0, 0.245590076, 0)
+rel.Size = UDim2.new(0, 531, 0, 230)
+rel.Active = true
+rel.Draggable = true
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(45, 168, 182)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(64, 96, 161))}
-UIGradient.Parent = Gradient
-
-UICorner.CornerRadius = UDim.new(0, 10)
-UICorner.Parent = Gradient
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = rel
 
 main.Name = "main"
-main.Parent = Gradient
+main.Parent = rel
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.BackgroundTransparency = 1.000
 main.Size = UDim2.new(0, 530, 0, 230)
+main.Active = true
+main.Draggable = true
+
 
 title.Name = "title"
 title.Parent = main
@@ -296,7 +300,6 @@ vyni6.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Tower%20of%20Hell"))()
 end)
 
-
 Shadow_6.Name = "Shadow"
 Shadow_6.Parent = vyni6
 Shadow_6.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
@@ -328,9 +331,6 @@ vyni7.Font = Enum.Font.SourceSans
 vyni7.Text = "Vynixius Jail Break"
 vyni7.TextColor3 = Color3.fromRGB(255, 255, 255)
 vyni7.TextSize = 14.000
-vyni7.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak"))()
-end)
 
 Shadow_7.Name = "Shadow"
 Shadow_7.Parent = vyni7
@@ -353,3 +353,21 @@ namesscripts_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 namesscripts_7.TextScaled = true
 namesscripts_7.TextSize = 14.000
 namesscripts_7.TextWrapped = true
+
+Button.Name = "Button"
+Button.Parent = rel
+Button.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Button.BorderSizePixel = 0
+Button.Size = UDim2.new(0, 37, 0, 35)
+Button.ZIndex = 2
+Button.Font = Enum.Font.GothamSemibold
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+Button.MouseButton1Down:connect(function()
+	rel.Visible = false
+end)
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = Button
