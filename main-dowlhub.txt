@@ -1,16 +1,14 @@
 
-
 local dowlhubmain = Instance.new("ScreenGui")
-local Gradient = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
+local re_mian = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
 local gui1 = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
 local Shadow = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
 local gui2 = Instance.new("TextButton")
 local Shadow_2 = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
@@ -33,37 +31,37 @@ local UICorner_10 = Instance.new("UICorner")
 local UICorner_11 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 local version = Instance.new("TextLabel")
-
---Properties:
+local close_button = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local openme = Instance.new("Frame")
+local Button = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 
 dowlhubmain.Name = "dowlhub main"
 dowlhubmain.Parent = game.CoreGui
 
-Gradient.Name = "Gradient"
-Gradient.Parent = dowlhubmain
-Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Gradient.BorderSizePixel = 0
-Gradient.Position = UDim2.new(0.297993213, 0, 0.253229856, 0)
-Gradient.Size = UDim2.new(0, 343, 0, 209)
-Gradient.Draggable = true
-Gradient.Active = true
+re_mian.Name = "re_mian"
+re_mian.Parent = dowlhubmain
+re_mian.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+re_mian.BorderColor3 = Color3.fromRGB(27, 42, 53)
+re_mian.BorderSizePixel = 0
+re_mian.Position = UDim2.new(0.297993213, 0, 0.253229856, 0)
+re_mian.Size = UDim2.new(0, 343, 0, 209)
+re_mian.Visible = false
+re_mian.Active = true
+re_mian.Draggable = true
 
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(128, 5, 235)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(86, 123, 217)), ColorSequenceKeypoint.new(0.71, Color3.fromRGB(97, 92, 221)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
-UIGradient.Parent = Gradient
-
-UICorner.CornerRadius = UDim.new(0, 10)
-UICorner.Parent = Gradient
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = re_mian
 
 main.Name = "main"
-main.Parent = Gradient
+main.Parent = re_mian
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.BackgroundTransparency = 1.000
 main.BorderSizePixel = 0
 main.Position = UDim2.new(-1.63093209e-05, 0, -0.00260776281, 0)
 main.Size = UDim2.new(0, 343, 0, 209)
-Gradient.Draggable = true
 
 title.Name = "title"
 title.Parent = main
@@ -79,7 +77,6 @@ title.TextScaled = true
 title.TextSize = 14.000
 title.TextWrapped = true
 
-
 gui1.Name = "gui1"
 gui1.Parent = main
 gui1.BackgroundColor3 = Color3.fromRGB(0, 176, 111)
@@ -89,9 +86,10 @@ gui1.Font = Enum.Font.SourceSans
 gui1.Text = "OwlHub"
 gui1.TextColor3 = Color3.fromRGB(255, 255, 255)
 gui1.TextSize = 14.000
+gui1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
+end)
 
-
-UICorner_2.Parent = gui1
 
 Shadow.Name = "Shadow"
 Shadow.Parent = gui1
@@ -99,7 +97,7 @@ Shadow.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
 Shadow.BorderSizePixel = 0
 Shadow.Size = UDim2.new(1, 0, 1, 4)
 
-UICorner_3.Parent = Shadow
+UICorner_2.Parent = Shadow
 
 TextLabel.Parent = gui1
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -112,9 +110,9 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
-gui1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
-end)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = gui1
 
 gui2.Name = "gui2"
 gui2.Parent = main
@@ -137,6 +135,7 @@ Shadow_2.Size = UDim2.new(1, 0, 1, 4)
 
 UICorner_4.Parent = Shadow_2
 
+UICorner_5.CornerRadius = UDim.new(0, 10)
 UICorner_5.Parent = gui2
 
 TextLabel_2.Parent = gui2
@@ -181,8 +180,11 @@ Shadow_3.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
 Shadow_3.BorderSizePixel = 0
 Shadow_3.Size = UDim2.new(1, 0, 1, 4)
 
+
+
 UICorner_6.Parent = Shadow_3
 
+UICorner_7.CornerRadius = UDim.new(0, 10)
 UICorner_7.Parent = gui3
 
 TextLabel_3.Parent = gui3
@@ -206,10 +208,11 @@ gui4.Font = Enum.Font.SourceSans
 gui4.Text = "Dark Hub"
 gui4.TextColor3 = Color3.fromRGB(255, 255, 255)
 gui4.TextSize = 14.000
+
+
 gui4.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
 end)
-
 
 Shadow_4.Name = "Shadow"
 Shadow_4.Parent = gui4
@@ -219,6 +222,7 @@ Shadow_4.Size = UDim2.new(1, 0, 1, 4)
 
 UICorner_8.Parent = Shadow_4
 
+UICorner_9.CornerRadius = UDim.new(0, 10)
 UICorner_9.Parent = gui4
 
 TextLabel_4.Parent = gui4
@@ -254,6 +258,7 @@ Shadow_5.Size = UDim2.new(1, 0, 1, 4)
 
 UICorner_10.Parent = Shadow_5
 
+UICorner_11.CornerRadius = UDim.new(0, 10)
 UICorner_11.Parent = gui5
 
 TextLabel_5.Parent = gui5
@@ -272,9 +277,66 @@ version.Name = "version"
 version.Parent = main
 version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 version.BackgroundTransparency = 1.000
-version.Position = UDim2.new(0.556851327, 0, 0, 0)
+version.Position = UDim2.new(0.586005867, 0, 0, 0)
 version.Size = UDim2.new(0, 200, 0, 14)
 version.Font = Enum.Font.SourceSans
-version.Text = "V1.3 Stylish Version"
+version.Text = "V4.1 Seal Oreo"
 version.TextColor3 = Color3.fromRGB(91, 91, 91)
 version.TextSize = 14.000
+
+close_button.Name = "close_button"
+close_button.Parent = re_mian
+close_button.BackgroundColor3 = Color3.fromRGB(115, 0, 0)
+close_button.BorderSizePixel = 0
+close_button.Position = UDim2.new(0.00486674905, 0, -0.000358687714, 0)
+close_button.Size = UDim2.new(0, 28, 0, 28)
+close_button.ZIndex = 2
+close_button.Font = Enum.Font.GothamSemibold
+close_button.Text = ""
+close_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+close_button.TextScaled = true
+close_button.TextSize = 14.000
+close_button.TextWrapped = true
+close_button.MouseButton1Down:connect(function()
+	re_mian.Visible = true
+	openme.Visible = false
+end)
+UICorner_12.CornerRadius = UDim.new(2, 0)
+UICorner_12.Parent = close_button
+
+openme.Name = "openme"
+openme.Parent = dowlhubmain
+openme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openme.BackgroundTransparency = 1.000
+openme.BorderColor3 = Color3.fromRGB(27, 42, 53)
+openme.BorderSizePixel = 0
+openme.Position = UDim2.new(-0.000213058534, 0, 0.936583877, 0)
+openme.Size = UDim2.new(0, 158, 0, 40)
+openme.Active = true
+
+Button.Name = "Button"
+Button.Parent = openme
+Button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0, 0, -7.07500029, 0)
+Button.Size = UDim2.new(0, 32, 0, 32)
+Button.ZIndex = 2
+Button.Font = Enum.Font.GothamSemibold
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+close_button.MouseButton1Down:connect(function()
+	re_mian.Visible = false
+	openme.Visible = true
+end)
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Button
+
+
+-- Scripts: Buttons
+
+
+
+
