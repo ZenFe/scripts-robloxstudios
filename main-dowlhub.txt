@@ -53,7 +53,7 @@ re_mian.BorderColor3 = Color3.fromRGB(27, 42, 53)
 re_mian.BorderSizePixel = 0
 re_mian.Position = UDim2.new(0.297993213, 0, 0.253229856, 0)
 re_mian.Size = UDim2.new(0, 343, 0, 209)
-re_mian.Visible = false
+re_mian.Visible = true
 re_mian.Active = true
 re_mian.Draggable = true
 
