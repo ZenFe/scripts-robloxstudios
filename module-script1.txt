@@ -22,7 +22,7 @@ local lets_2 = Instance.new("TextLabel")
 --Properties:
 
 module_Script.Name = "module_Script"
-module_Script.Parent = game.Workspace
+module_Script.Parent = game.CoreGui
 module_Script.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 load_script.Name = "load_script"
