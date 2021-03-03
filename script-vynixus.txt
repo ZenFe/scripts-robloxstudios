@@ -71,8 +71,7 @@ main.Parent = rel
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.BackgroundTransparency = 1.000
 main.Size = UDim2.new(0, 530, 0, 230)
-main.Active = true
-main.Draggable = true
+
 
 
 title.Name = "title"
