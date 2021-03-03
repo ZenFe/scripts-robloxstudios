@@ -1,0 +1,154 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local module_Script = Instance.new("ScreenGui")
+local load_script = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local title_module = Instance.new("TextLabel")
+local desc_module = Instance.new("TextLabel")
+local run = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Shadow = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local lets = Instance.new("TextLabel")
+local run_12 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Shadow_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local lets_2 = Instance.new("TextLabel")
+
+--Properties:
+
+module_Script.Name = "module_Script"
+module_Script.Parent = game.Workspace
+module_Script.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+load_script.Name = "load_script"
+load_script.Parent = module_Script
+load_script.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+load_script.BorderColor3 = Color3.fromRGB(27, 42, 53)
+load_script.BorderSizePixel = 0
+load_script.Position = UDim2.new(0.414278567, 0, 0.293602496, 0)
+load_script.Size = UDim2.new(0, 200, 0, 208)
+load_script.Active = true
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = load_script
+
+title_module.Name = "title_module"
+title_module.Parent = load_script
+title_module.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_module.BackgroundTransparency = 1.000
+title_module.Size = UDim2.new(0, 200, 0, 25)
+title_module.Font = Enum.Font.GothamSemibold
+title_module.Text = "Wait! Wait!"
+title_module.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_module.TextScaled = true
+title_module.TextSize = 14.000
+title_module.TextWrapped = true
+
+desc_module.Name = "desc_module"
+desc_module.Parent = load_script
+desc_module.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+desc_module.BackgroundTransparency = 1.000
+desc_module.Position = UDim2.new(0, 0, 0.116923079, 0)
+desc_module.Size = UDim2.new(0, 200, 0, 122)
+desc_module.Font = Enum.Font.GothamSemibold
+desc_module.Text = "You are one button away from loading a script, but first this script may not work in many games! Are you sure you want to run it?"
+desc_module.TextColor3 = Color3.fromRGB(255, 0, 0)
+desc_module.TextScaled = true
+desc_module.TextSize = 14.000
+desc_module.TextWrapped = true
+
+run.Name = "run"
+run.Parent = load_script
+run.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+run.BorderSizePixel = 0
+run.Position = UDim2.new(0.0500000007, 0, 0.745000124, 0)
+run.Size = UDim2.new(0, 86, 0, 45)
+run.ZIndex = 2
+run.Font = Enum.Font.GothamSemibold
+run.Text = "Yes!"
+run.TextColor3 = Color3.fromRGB(255, 255, 255)
+run.TextScaled = true
+run.TextSize = 14.000
+run.TextWrapped = true
+run.MouseButton1Down:connect(function()
+	load_script.Visible = false
+end)
+run.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+
+UICorner_2.Parent = run
+
+Shadow.Name = "Shadow"
+Shadow.Parent = run
+Shadow.BackgroundColor3 = Color3.fromRGB(53, 69, 103)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_3.Parent = Shadow
+
+lets.Name = "lets"
+lets.Parent = run
+lets.AnchorPoint = Vector2.new(0.5, 0.5)
+lets.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lets.BackgroundTransparency = 1.000
+lets.BorderColor3 = Color3.fromRGB(27, 42, 53)
+lets.BorderSizePixel = 0
+lets.Position = UDim2.new(0.5, 0, 0.5, 0)
+lets.Size = UDim2.new(1, -20, 1, -20)
+lets.ZIndex = 2
+lets.Font = Enum.Font.GothamSemibold
+lets.Text = "Yes"
+lets.TextColor3 = Color3.fromRGB(255, 255, 255)
+lets.TextScaled = true
+lets.TextSize = 14.000
+lets.TextWrapped = true
+
+run_12.Name = "run_12"
+run_12.Parent = load_script
+run_12.BackgroundColor3 = Color3.fromRGB(150, 0, 2)
+run_12.BorderSizePixel = 0
+run_12.Position = UDim2.new(0.524999976, 0, 0.745000124, 0)
+run_12.Size = UDim2.new(0, 86, 0, 45)
+run_12.ZIndex = 2
+run_12.Font = Enum.Font.GothamSemibold
+run_12.Text = "No"
+run_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+run_12.TextScaled = true
+run_12.TextSize = 14.000
+run_12.TextWrapped = true
+run_12.MouseButton1Down:connect(function()
+	load_script.Visible = false
+end)
+
+UICorner_4.Parent = run_12
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = run_12
+Shadow_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_5.Parent = Shadow_2
+
+lets_2.Name = "lets"
+lets_2.Parent = run_12
+lets_2.AnchorPoint = Vector2.new(0.5, 0.5)
+lets_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lets_2.BackgroundTransparency = 1.000
+lets_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+lets_2.BorderSizePixel = 0
+lets_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+lets_2.Size = UDim2.new(1, -20, 1, -20)
+lets_2.ZIndex = 2
+lets_2.Font = Enum.Font.GothamSemibold
+lets_2.Text = "No"
+lets_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+lets_2.TextScaled = true
+lets_2.TextSize = 14.000
+lets_2.TextWrapped = true
