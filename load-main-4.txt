@@ -1,0 +1,145 @@
+
+local dowlhubloaded = Instance.new("ScreenGui")
+local main_load = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local re_version = Instance.new("TextLabel")
+local load_s = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local load_2_ = Instance.new("TextLabel")
+local updates = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+
+
+dowlhubloaded.Name = "dowlhub loaded"
+dowlhubloaded.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+dowlhubloaded.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main_load.Name = "main_load"
+main_load.Parent = dowlhubloaded
+main_load.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+main_load.BorderColor3 = Color3.fromRGB(27, 42, 53)
+main_load.BorderSizePixel = 0
+main_load.Position = UDim2.new(0.437423468, 0, 0.320431888, 0)
+main_load.Size = UDim2.new(0, 240, 0, 271)
+main_load.Active = true
+main_load.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = main_load
+
+re_version.Name = "re_version"
+re_version.Parent = main_load
+re_version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+re_version.BackgroundTransparency = 1.000
+re_version.Position = UDim2.new(0.108239919, 0, -0.0670108199, 0)
+re_version.Size = UDim2.new(0, 200, 0, 18)
+re_version.Font = Enum.Font.SourceSans
+re_version.Text = "Version Seal Oreo v4.1"
+re_version.TextColor3 = Color3.fromRGB(143, 143, 143)
+re_version.TextScaled = true
+re_version.TextSize = 14.000
+re_version.TextWrapped = true
+
+load_s.Name = "load_s"
+load_s.Parent = main_load
+load_s.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+load_s.BorderSizePixel = 0
+load_s.Position = UDim2.new(0.0711640641, 0, 0.343918353, 0)
+load_s.Size = UDim2.new(0, 208, 0, 45)
+load_s.ZIndex = 2
+load_s.Font = Enum.Font.GothamSemibold
+load_s.Text = ""
+load_s.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_s.TextScaled = true
+load_s.TextSize = 14.000
+load_s.TextWrapped = true
+load_s.MouseButton1Down:connect(function()
+	main_load.Visible = false
+end)
+load_s.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenFe/scripts-robloxstudios/master/main-dowlhub.txt"))()
+end)
+
+UICorner_2.Parent = load_s
+
+load_2_.Name = "load_2_"
+load_2_.Parent = load_s
+load_2_.AnchorPoint = Vector2.new(0.5, 0.5)
+load_2_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+load_2_.BackgroundTransparency = 1.000
+load_2_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+load_2_.BorderSizePixel = 0
+load_2_.Position = UDim2.new(0.5, 0, 0.5, 0)
+load_2_.Size = UDim2.new(1, -20, 1, -20)
+load_2_.ZIndex = 2
+load_2_.Font = Enum.Font.GothamSemibold
+load_2_.Text = "Load Script"
+load_2_.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_2_.TextScaled = true
+load_2_.TextSize = 14.000
+load_2_.TextWrapped = true
+
+updates.Name = "updates"
+updates.Parent = main_load
+updates.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+updates.BorderColor3 = Color3.fromRGB(27, 42, 53)
+updates.BorderSizePixel = 0
+updates.Position = UDim2.new(0.0754765794, 0, 0.586240292, 0)
+updates.Size = UDim2.new(0, 207, 0, 104)
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = updates
+
+TextLabel.Parent = updates
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.00499999989, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 19)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "[+] Added Load Screen"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = updates
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.00499999989, 0, 0.182692304, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 19)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "[+] New Version Added"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = updates
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.100000001, 0, 0.365384609, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 19)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "[*] Gui Title Fixed"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+title.Name = "title"
+title.Parent = main_load
+title.Active = true
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.0754765794, 0, 0.0915118083, 0)
+title.Size = UDim2.new(0, 207, 0, 50)
+title.Font = Enum.Font.GothamSemibold
+title.Text = "Welcome to DowlHub!"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
