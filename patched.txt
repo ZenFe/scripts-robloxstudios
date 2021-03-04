@@ -44,7 +44,7 @@ local UICorner_13 = Instance.new("UICorner")
 --Properties:
 
 dowlhubmain.Name = "dowlhub main"
-dowlhubmain.Parent = game.Workspace
+dowlhubmain.Parent = game.CoreGui
 
 re_mian.Name = "re_mian"
 re_mian.Parent = dowlhubmain
@@ -297,6 +297,10 @@ close_button.TextColor3 = Color3.fromRGB(255, 255, 255)
 close_button.TextScaled = true
 close_button.TextSize = 14.000
 close_button.TextWrapped = true
+close_button.MouseButton1Down:connect(function()
+	re_mian.Visible = false
+	openme.Visible = true
+end)
 
 UICorner_12.CornerRadius = UDim.new(2, 0)
 UICorner_12.Parent = close_button
@@ -309,6 +313,7 @@ openme.BorderColor3 = Color3.fromRGB(27, 42, 53)
 openme.BorderSizePixel = 0
 openme.Position = UDim2.new(-0.000213058534, 0, 0.936583877, 0)
 openme.Size = UDim2.new(0, 158, 0, 40)
+openme.Visible = false
 
 Button.Name = "Button"
 Button.Parent = openme
@@ -323,6 +328,11 @@ Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button.TextScaled = true
 Button.TextSize = 14.000
 Button.TextWrapped = true
+Button.MouseButton1Down:connect(function()
+	re_mian.Visible = true
+	openme.Visible = false
+end)
+
 
 UICorner_13.CornerRadius = UDim.new(1, 0)
 UICorner_13.Parent = Button
