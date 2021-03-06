@@ -92,7 +92,7 @@ gui1.Text = "OwlHub"
 gui1.TextColor3 = Color3.fromRGB(255, 255, 255)
 gui1.TextSize = 14.000
 gui1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
 end)
 
 Shadow.Name = "Shadow"
