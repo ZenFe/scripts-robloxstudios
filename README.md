@@ -39,4 +39,4 @@ For more information, please refer to <http://unlicense.org/>
 
 ### Website
 
-[Support] (https://zenfe.github.io/scripts-robloxstudios/)
+[Support](https://zenfe.github.io/scripts-robloxstudios/)
